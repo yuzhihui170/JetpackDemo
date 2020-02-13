@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VP2DemoActivity">
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--    android:id="@+id/layout"-->               <!-- -->
+<!--    android:layout_width="match_parent"-->    <!-- -->
+<!--    android:layout_height="48dp"-->           <!-- -->
+<!--    android:background="#ff0000"-->           <!-- -->
+<!--    app:tabBackground="@drawable/icon_tab"--> <!-- 每个Tab的背景颜色，引用类型 -->
+<!--    app:tabMode="scrollable" --> <!-- scrollable 可滑动 fixed 固定；当tab很多时设置scrollable避免挤压。到tab比较少是选择fixed 可以填充整个宽度-->
+<!--    app:tabTextAppearance= Text可以设置多种属性 采用这个属性 否则只能设置颜色 -->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        app:tabSelectedTextColor="#ffff0000"
+        app:tabTextColor="#ff333333"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabPaddingTop="2dp"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorColor="#0000ff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#30333333" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</LinearLayout>
