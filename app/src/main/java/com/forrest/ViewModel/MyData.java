@@ -1,4 +1,4 @@
-package com.yuzh.ViewModel;
+package com.forrest.ViewModel;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

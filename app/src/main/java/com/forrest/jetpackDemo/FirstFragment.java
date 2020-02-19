@@ -1,4 +1,4 @@
-package com.yuzh.jetpackDemo;
+package com.forrest.jetpackDemo;
 
 import android.os.Bundle;
 
@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.yuzh.jetpackDemo.R;
 
 public class FirstFragment extends Fragment {
 

@@ -1,8 +1,9 @@
-package com.yuzh.jetpackDemo.adapter;
+package com.forrest.jetpackDemo.adapter;
 
 import android.util.Log;
 
-import com.yuzh.jetpackDemo.SubFragment;
+import com.forrest.jetpackDemo.FirstFragment;
+import com.forrest.jetpackDemo.SubFragment;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -33,7 +34,7 @@ public class VPAdapter extends FragmentStateAdapter {
         if (position == 0) {
             return new SubFragment();
         } else if (position == 1) {
-            return new SubFragment();
+            return new FirstFragment();
         }
         Log.d(TAG, "createFragment: " + position);
         return null;

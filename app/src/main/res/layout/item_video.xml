@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_benefit"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_thumb_preholder" />
+
+    <TextView
+        android:id="@+id/tv_benefit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_benefit"
+        android:layout_alignStart="@+id/iv_benefit"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="福利产品名称"
+        android:textColor="#333333"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/iv_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_benefit_name"
+        android:layout_alignEnd="@+id/iv_benefit"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/icon_benfit_receive" />
+
+    <TextView
+        android:id="@+id/tv_receive_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_benefit_name"
+        android:layout_alignTop="@+id/iv_operate"
+        android:layout_alignBottom="@+id/iv_operate"
+        android:text="已领789件"
+        android:textColor="#999999"
+        android:textSize="13dp" />
+</RelativeLayout>

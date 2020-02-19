@@ -1,4 +1,4 @@
-package com.yuzh.commonlib.util;
+package me.forrest.commonlib.util;
 
 import android.text.SpannableString;
 import android.text.Spanned;

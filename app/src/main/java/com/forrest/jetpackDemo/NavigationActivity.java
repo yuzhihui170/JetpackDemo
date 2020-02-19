@@ -1,9 +1,11 @@
-package com.yuzh.jetpackDemo;
+package com.forrest.jetpackDemo;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.yuzh.jetpackDemo.R;
 
 public class NavigationActivity extends AppCompatActivity {
 

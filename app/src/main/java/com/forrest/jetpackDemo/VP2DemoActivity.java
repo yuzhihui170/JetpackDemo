@@ -1,23 +1,19 @@
-package com.yuzh.jetpackDemo;
+package com.forrest.jetpackDemo;
 
 import android.annotation.SuppressLint;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.text.SpannableString;
-import android.text.Spanned;
 import android.text.TextUtils;
-import android.text.style.StyleSpan;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
 
+import me.forrest.commonlib.log.LogTool;
+import me.forrest.commonlib.util.SpannableStringUtil;
+import com.forrest.jetpackDemo.adapter.VPAdapter;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
-import com.yuzh.commonlib.log.LogTool;
-import com.yuzh.commonlib.util.SpannableStringUtil;
-import com.yuzh.jetpackDemo.adapter.VPAdapter;
-
-import java.util.zip.Inflater;
+import com.yuzh.jetpackDemo.R;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -70,7 +66,7 @@ public class VP2DemoActivity extends AppCompatActivity {
                 SpannableString spanString = SpannableStringUtil.setTypeface(Typeface.BOLD, content);
                 tab.setText(spanString);
                 tab.setIcon(R.drawable.icon_tab_xin_red);
-                LogTool.debug("onTabSelected: ");
+//                LogTool.debug("tabLayout onTabSelected: ");
             }
 
             @Override
@@ -82,7 +78,7 @@ public class VP2DemoActivity extends AppCompatActivity {
                 SpannableString spanString = SpannableStringUtil.setTypeface(Typeface.NORMAL, content);
                 tab.setText(spanString);
                 tab.setIcon(R.drawable.icon_tab_xin_white);
-                LogTool.debug("onTabUnselected: ");
+//                LogTool.debug("tabLayout onTabUnselected: ");
             }
 
             @Override
